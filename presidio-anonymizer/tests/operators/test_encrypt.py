@@ -1,5 +1,6 @@
 from unittest import mock
 
+from presidio_anonymizer.operators.operator import OperatorType
 import pytest
 
 from presidio_anonymizer.operators import Encrypt, AESCipher
@@ -38,7 +39,19 @@ def test_given_verifying_an_valid_length_key_no_exceptions_raised():
 def test_given_verifying_an_valid_length_bytes_key_no_exceptions_raised():
     Encrypt().validate(params={"key": b'1111111111111111'})
 
-
+@pytest.mark.parametrize(
+    "key, description",
+    [
+        ("6" * 16, "128-bit string key"),  
+        ("6" * 24, "192-bit string key"),    
+        ("6" * 32, "256-bit string key"),  
+        (b'1' * 16, "128-bit bytes key"),  
+        (b'1' * 24, "192-bit bytes key"),  
+        (b'1' * 32, "256-bit bytes key"),  
+    ],
+)
+def test_valid_keys(key, description):
+    Encrypt().validate(params={"key": key})
 def test_given_verifying_an_invalid_length_key_then_ipe_raised():
     with pytest.raises(
         InvalidParamError,
@@ -46,11 +59,17 @@ def test_given_verifying_an_invalid_length_key_then_ipe_raised():
     ):
         Encrypt().validate(params={"key": "key"})
 
-@mock.patch.object(AESCipher, "encrypt") # hint: replace encrypt with the method that you want to mock
-def test_given_verifying_an_invalid_length_bytes_key_then_ipe_raised(mock_encrypt): # hint: replace mock_encrypt with a proper name for your mocker
-    # Here: add setup for mocking
+@mock.patch.object(AESCipher, "__init__")# hint: replace encrypt with the method that you want to mock
+def test_given_verifying_an_invalid_length_bytes_key_then_ipe_raised(mock_aes_init): # hint: replace mock_encrypt with a proper name for your mocker
+    mock_aes_init.side_effect = ValueError("Invalid key length")
     with pytest.raises(
         InvalidParamError,
         match="Invalid input, key must be of length 128, 192 or 256 bits",
     ):
-        Encrypt().validate(params={"key": b'1111111111111111'})
+        Encrypt().validate(params={"key": b'short'})
+def test_operator_name():
+    encrypt_operator = Encrypt()
+    assert encrypt_operator.operator_name() == "encrypt"
+def test_operator_type():
+    encrypt_operator = Encrypt()
+    assert encrypt_operator.operator_type() == OperatorType.Anonymize
