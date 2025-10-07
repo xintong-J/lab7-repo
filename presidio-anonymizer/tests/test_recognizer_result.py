@@ -295,7 +295,7 @@ def test_logger(mock_logger):
     result = create_recognizer_result(entity_type, score, start, end)
 
     mock_logger.info.assert_called_once()
-    
+    mock_logger.info.assert_called_with(mock.ANY)
     log_message = mock_logger.info.call_args[0][0]
     assert entity_type in log_message
     assert str(start) in log_message
