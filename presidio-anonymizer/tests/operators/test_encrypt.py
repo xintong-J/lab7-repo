@@ -59,14 +59,15 @@ def test_given_verifying_an_invalid_length_key_then_ipe_raised():
     ):
         Encrypt().validate(params={"key": "key"})
 
-@mock.patch.object(AESCipher, "__init__")# hint: replace encrypt with the method that you want to mock
-def test_given_verifying_an_invalid_length_bytes_key_then_ipe_raised(mock_aes_init): # hint: replace mock_encrypt with a proper name for your mocker
-    mock_aes_init.side_effect = ValueError("Invalid key length")
+@mock.patch.object(AESCipher, "is_valid_key_size")# hint: replace encrypt with the method that you want to mock
+def test_given_verifying_an_invalid_length_bytes_key_then_ipe_raised(mock_is_valid_key_size): # hint: replace mock_encrypt with a proper name for your mocker
+    #mock_aes_init.side_effect = ValueError("Invalid key length")
+    mock_is_valid_key_size.return_value = False
     with pytest.raises(
         InvalidParamError,
         match="Invalid input, key must be of length 128, 192 or 256 bits",
     ):
-        Encrypt().validate(params={"key": b'short'})
+        Encrypt().validate(params={"key": b'1111111111111111'})
 def test_operator_name():
     encrypt_operator = Encrypt()
     assert encrypt_operator.operator_name() == "encrypt"
