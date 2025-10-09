@@ -301,6 +301,7 @@ def test_logger(mock_logger):
     assert str(start) in log_message
     assert str(end) in log_message
     assert f"{score:.2f}" in log_message
+    
     mock_logger.info.assert_called_once()  
 
 def create_recognizer_result(entity_type: str, score: float, start: int, end: int):
