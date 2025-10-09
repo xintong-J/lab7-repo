@@ -304,6 +304,7 @@ def test_logger(mock_logger):
     assert f"score" in log_message
     mock_logger.info.assert_called_once()
 
+
 def create_recognizer_result(entity_type: str, score: float, start: int, end: int):
     data = {"entity_type": entity_type, "score": score, "start": start, "end": end}
     return RecognizerResult.from_json(data)
