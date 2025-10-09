@@ -8,20 +8,20 @@ Branches in this repo (with details):
     b6a8f2a | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-06T17:54:42Z | Auto-update branch-info.txt
     f413bbb | Author: xintong-JIANG <231744781+xintong-J@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-10-06T13:54:30-04:00 | Initial commit
 - lab7
-  SHA: 039c4402d54412a47bc583b46a95afd7eafe2c8d
-  Commits: 5
+  SHA: e758d508a7e47a2748025c61e9facb7834073cbb
+  Commits: 7
   Recent commits:
+    e758d50 | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-09T14:34:29Z | add file
+    52a001a | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-07T22:28:47Z | changes in files
     039c440 | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-07T22:17:21Z | changes in the file
     497f6c9 | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-07T03:18:33Z | Changes in all three files.
     1fdf6cd | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-06T17:55:23Z | Auto-update branch-info.txt
-    b6a8f2a | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-06T17:54:42Z | Auto-update branch-info.txt
-    f413bbb | Author: xintong-JIANG <231744781+xintong-J@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-10-06T13:54:30-04:00 | Initial commit
 - main
-  SHA: 40ff5b9e09dee56fcacf5137865268acd919b6df
-  Commits: 18
+  SHA: ba71fc347c61fc9617bdf91bd22987c9a4cfe30a
+  Commits: 21
   Recent commits:
+    ba71fc3 | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-09T14:35:52Z | add
+    e758d50 | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-09T14:34:29Z | add file
+    06e23f0 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-09T14:32:25Z | Auto-update branch-info.txt
     40ff5b9 | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-09T14:31:51Z | add to the file
     17c202d | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-07T22:31:17Z | Auto-update branch-info.txt
-    1cfbd5b | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-07T22:30:55Z | changes
-    52a001a | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-07T22:28:47Z | changes in files
-    0d35e81 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-07T22:18:55Z | Auto-update branch-info.txt
