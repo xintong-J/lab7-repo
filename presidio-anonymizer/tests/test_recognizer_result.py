@@ -297,7 +297,6 @@ def test_logger(mock_logger):
     mock_logger.info.assert_called_once()
 
     log_message = mock_logger.info.call_args[0][0]
-<<<<<<< HEAD
 
     assert f"entity_type" in log_message
     assert f"start" in log_message
@@ -306,13 +305,6 @@ def test_logger(mock_logger):
     
     mock_logger.info.assert_called_once()
 
-=======
-    assert entity_type in log_message
-    assert str(start) in log_message
-    assert str(end) in log_message
-    assert f"{score:.2f}" in log_message
-    mock_logger.info.assert_called_once()  
->>>>>>> lab7
 
 def create_recognizer_result(entity_type: str, score: float, start: int, end: int):
     data = {"entity_type": entity_type, "score": score, "start": start, "end": end}
