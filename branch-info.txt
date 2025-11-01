@@ -1,5 +1,14 @@
 Branches in this repo (with details):
 
+- dependabot/docker/presidio-anonymizer/python-3.14-windowsservercore
+  SHA: c9f6c3eae20ac0bab785476ad38ff3d6e91827b6
+  Commits: 33
+  Recent commits:
+    c9f6c3e | Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-11-01T04:17:49Z | Bump python in /presidio-anonymizer
+    71c4beb | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-09T16:56:20Z | Auto-update branch-info.txt
+    e8e473b | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-09T16:55:57Z | edited
+    4ec3f3d | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-09T16:52:30Z | Auto-update branch-info.txt
+    61d9896 | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-09T16:52:10Z | added in file
 - dependabot/github_actions/actions/checkout-5
   SHA: 696653e9ca753fbeea890f7883059cd2acd8b515
   Commits: 3
@@ -17,11 +26,11 @@ Branches in this repo (with details):
     497f6c9 | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-07T03:18:33Z | Changes in all three files.
     1fdf6cd | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-06T17:55:23Z | Auto-update branch-info.txt
 - main
-  SHA: e8e473b2b0554c444a2b84fbe9d0c1103b5dd776
-  Commits: 31
+  SHA: 71c4beb5bdbbad3e580cb20b717ff57ddaaef76c
+  Commits: 32
   Recent commits:
+    71c4beb | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-09T16:56:20Z | Auto-update branch-info.txt
     e8e473b | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-09T16:55:57Z | edited
     4ec3f3d | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-09T16:52:30Z | Auto-update branch-info.txt
     61d9896 | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-09T16:52:10Z | added in file
     d4abd4f | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-09T16:48:58Z | change in the file
-    f6a1bc6 | Author: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Committer: Xintong Jiang <231744781+xintong-J@users.noreply.github.com> | Date: 2025-10-09T16:47:58Z | added
